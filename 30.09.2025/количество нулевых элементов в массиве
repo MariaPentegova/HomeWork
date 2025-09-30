@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main{
+    int len, res;
+    scanf('%d', &len);
+    if (len<=0){
+        printf('incorrect input');
+        return 0;
+    }
+    int arr[len];
+    for (int i=0; i<len; i++){
+        scanf('%d' &arr[i]);
+    }
+    for (int i=0; i<len; i++){
+        if (arr[i]==0){
+            ++res;
+        }
+    }
+    printf('%d', res);
+}
