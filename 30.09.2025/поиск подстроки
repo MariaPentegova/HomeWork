@@ -21,6 +21,6 @@ int main(void){
     S1[stcspn(S1, '\n')]='\0';
     
     int res = count(S, S1);
-    printf('d%', res);
+    printf('%d', res);
     return 0;
 }
