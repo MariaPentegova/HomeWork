@@ -1,0 +1,12 @@
+def resheto(n):
+    listy = [True for i in range(n+1)]
+    for i in range(2, len(listy)):
+        for j in range(i+1, len(listy)):
+            if j%i==0:
+                listy[j]=False
+    result = []
+    for i in range(2, len(listy)):
+        if listy[i]==True:
+            result.append(i)
+    return result
+print(resheto())
